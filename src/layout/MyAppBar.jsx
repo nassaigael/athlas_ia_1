@@ -4,7 +4,16 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 export default function MyAppBar(props) {
     return (
-        <AppBar {...props} userMenu={false}>
+        <AppBar
+            {...props}
+            userMenu={false}
+            open={false}
+            sx={{
+                '& .RaAppBar-menuButton': {
+                    display: 'none !important'
+                }
+            }}
+        >
             <Box sx={{display: 'flex', alignItems: 'center', gap: 1, flex: 1}}>
                 <Typography sx={{
                     fontFamily: '"Space Grotesk", sans-serif',
