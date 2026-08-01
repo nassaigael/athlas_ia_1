@@ -3,16 +3,41 @@
   "builds": [
     {
       "src": "api/index.js",
-      "use": "@vercel/node",
-      "config": {
-        "maxDuration": 10
-      }
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/**",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
       "dest": "/api/index.js"
+    },
+    {
+      "src": "/assets/(.*)",
+      "dest": "/dist/assets/$1"
+    },
+    {
+      "src": "/favicon.svg",
+      "dest": "/dist/favicon.svg"
+    },
+    {
+      "src": "/icons.svg",
+      "dest": "/dist/icons.svg"
+    },
+    {
+      "src": "/logo.png",
+      "dest": "/dist/logo.png"
+    },
+    {
+      "src": "/",
+      "dest": "/dist/index.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/dist/index.html"
     }
   ]
 }

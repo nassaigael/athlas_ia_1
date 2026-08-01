@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality.">
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability. This reduces complexity and improves code quality.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.053400035247474" />
-      <entry key="MS500" value="3.846124162429847" />
-      <entry key="S2" value="4.666054058128349" />
-      <entry key="S5" value="5.196866949620067" />
-      <entry key="S10" value="6.233024199309877" />
-      <entry key="S30" value="8.714223090608584" />
-      <entry key="S60" value="11.27665004322468" />
-      <entry key="M2" value="15.467831794086562" />
-      <entry key="M5" value="24.566044163276814" />
-      <entry key="M10" value="40.81348962637506" />
-      <entry key="M15" value="57.609443039270204" />
-      <entry key="M30" value="99.55794232202561" />
-      <entry key="H1" value="148.17348422365245" />
-      <entry key="H2" value="188.40372893666964" />
-      <entry key="H4" value="214.87857296228836" />
-      <entry key="D1" value="241.19866115950308" />
-      <entry key="W1" value="246.1594579081368" />
+      <entry key="MS100" value="1.7218362295723417" />
+      <entry key="MS500" value="3.680579020459337" />
+      <entry key="S2" value="4.6085193310963755" />
+      <entry key="S5" value="4.837654754844369" />
+      <entry key="S10" value="4.917833844803959" />
+      <entry key="S30" value="4.972618536367205" />
+      <entry key="S60" value="5.067036140243807" />
+      <entry key="M2" value="6.640444488553225" />
+      <entry key="M5" value="17.505575455870964" />
+      <entry key="M10" value="36.685567427352794" />
+      <entry key="M15" value="54.920526272807926" />
+      <entry key="M30" value="101.14359333375849" />
+      <entry key="H1" value="157.7751355320416" />
+      <entry key="H2" value="207.01429329308317" />
+      <entry key="H4" value="240.44952786698042" />
+      <entry key="D1" value="274.420291804373" />
+      <entry key="W1" value="280.89980034315283" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="2.7907489248067033E-130" />
-      <entry key="S2" value="4.087240485441591E-33" />
-      <entry key="S5" value="1.1080824502773248E-13" />
-      <entry key="S10" value="3.328787242040747E-7" />
-      <entry key="S30" value="0.006930459234709486" />
-      <entry key="S60" value="0.08325236432735876" />
-      <entry key="M2" value="0.29025728413007856" />
-      <entry key="M5" value="0.6867697936531547" />
-      <entry key="M10" value="1.0630543679124729" />
-      <entry key="M15" value="1.2960241451706827" />
-      <entry key="M30" value="1.7181560660550297" />
-      <entry key="H1" value="2.146902073120761" />
-      <entry key="H2" value="2.4941708765403856" />
-      <entry key="H4" value="2.722455334767819" />
-      <entry key="D1" value="2.9498122372952826" />
-      <entry key="W1" value="2.9927266044940444" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="2.9790480051849536E-162" />
+      <entry key="S5" value="2.4526241521110633E-65" />
+      <entry key="S10" value="4.952397552813249E-33" />
+      <entry key="S30" value="1.704532033248573E-11" />
+      <entry key="S60" value="4.128745877974667E-6" />
+      <entry key="M2" value="0.002044061300006135" />
+      <entry key="M5" value="0.09460095064296227" />
+      <entry key="M10" value="0.3945459901916451" />
+      <entry key="M15" value="0.6693313975574012" />
+      <entry key="M30" value="1.2347432546929082" />
+      <entry key="H1" value="1.8199910891776658" />
+      <entry key="H2" value="2.296437959227624" />
+      <entry key="H4" value="2.6123118466503805" />
+      <entry key="D1" value="2.9295781133473913" />
+      <entry key="W1" value="2.9897853044993177" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.968511416594698" />
-      <entry key="MS500" value="3.811902035418908" />
-      <entry key="S2" value="4.655456274345644" />
-      <entry key="S5" value="5.192097662301658" />
-      <entry key="S10" value="6.2301233580110935" />
-      <entry key="S30" value="8.719488557872703" />
-      <entry key="S60" value="11.357195250368639" />
-      <entry key="M2" value="15.754281103843686" />
-      <entry key="M5" value="25.249433620142348" />
-      <entry key="M10" value="41.873936733169124" />
-      <entry key="M15" value="58.9032492693015" />
-      <entry key="M30" value="101.27431285645962" />
-      <entry key="H1" value="150.3190110079496" />
-      <entry key="H2" value="190.89698849670248" />
-      <entry key="H4" value="217.60049502078868" />
-      <entry key="D1" value="244.14837125490388" />
-      <entry key="W1" value="249.15216955833162" />
+      <entry key="MS100" value="1.6103445336586828" />
+      <entry key="MS500" value="3.6261784566414996" />
+      <entry key="S2" value="4.590407893826484" />
+      <entry key="S5" value="4.829946522594968" />
+      <entry key="S10" value="4.91389786622434" />
+      <entry key="S30" value="4.971287855130504" />
+      <entry key="S60" value="5.066363739978558" />
+      <entry key="M2" value="6.6420448214889625" />
+      <entry key="M5" value="17.599382649028822" />
+      <entry key="M10" value="37.078903189053015" />
+      <entry key="M15" value="55.58852494544141" />
+      <entry key="M30" value="102.37694419643614" />
+      <entry key="H1" value="159.59390161864172" />
+      <entry key="H2" value="209.30986140240162" />
+      <entry key="H4" value="243.06131230658752" />
+      <entry key="D1" value="277.34976581403225" />
+      <entry key="W1" value="283.88957032659226" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -173,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="6981000" />
+      <workItem from="1785593626938" duration="7781000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -407,7 +405,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785600854347</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability. This reduces complexity and improves code quality.">
+      <option name="closed" value="true" />
+      <created>1785601567865</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1785601567865</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -425,20 +431,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maint" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability of" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability of the" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability of the build" />
-    <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability of the build process" />
     <MESSAGE value="refactor(build): simplify vite config&#10;&#10;Remove unnecessary rollup options and manual chunks &#10;to reduce configuration complexity and improve &#10;maintainability of the build process." />
-    <MESSAGE value="refactor(api" />
-    <MESSAGE value="refactor(api): simplify CORS configuration and" />
-    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove" />
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS" />
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration" />
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify" />
@@ -450,6 +443,19 @@
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code" />
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality" />
     <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality." />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality." />
+    <MESSAGE value="ref" />
+    <MESSAGE value="refactor" />
+    <MESSAGE value="refactor(api" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability." />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability. This" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability. This reduces complexity and improves code quality." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify routes for better readability &#10;and maintainability. This reduces complexity and improves code quality." />
   </component>
 </project>
