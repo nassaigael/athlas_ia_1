@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces &#10;configuration complexity.">
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" />
-    </list>
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -48,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.7120781064263388" />
-      <entry key="MS500" value="3.610394112632218" />
-      <entry key="S2" value="4.581002554458069" />
-      <entry key="S5" value="4.825653327986523" />
-      <entry key="S10" value="4.922790478862001" />
-      <entry key="S30" value="5.783731888456273" />
-      <entry key="S60" value="7.706873513696205" />
-      <entry key="M2" value="10.823065407453852" />
-      <entry key="M5" value="21.516915213734993" />
-      <entry key="M10" value="40.44257343631704" />
-      <entry key="M15" value="58.68370198850438" />
-      <entry key="M30" value="105.38190348246474" />
-      <entry key="H1" value="163.26544851014523" />
-      <entry key="H2" value="214.0481169430056" />
-      <entry key="H4" value="248.72424926162796" />
-      <entry key="D1" value="284.09165414955123" />
-      <entry key="W1" value="290.85173125727226" />
+      <entry key="MS100" value="2.284153690144344" />
+      <entry key="MS500" value="3.904509488826568" />
+      <entry key="S2" value="4.675228810770674" />
+      <entry key="S5" value="4.865358574205025" />
+      <entry key="S10" value="4.932325317603842" />
+      <entry key="S30" value="5.207597468924123" />
+      <entry key="S60" value="6.263409224816479" />
+      <entry key="M2" value="9.093194444586313" />
+      <entry key="M5" value="19.1494013378374" />
+      <entry key="M10" value="37.510542906399145" />
+      <entry key="M15" value="55.68531270089258" />
+      <entry key="M30" value="103.22781331677876" />
+      <entry key="H1" value="163.64182187275318" />
+      <entry key="H2" value="217.66579786901946" />
+      <entry key="H4" value="254.99371665787586" />
+      <entry key="D1" value="293.3778347032808" />
+      <entry key="W1" value="300.7472375619626" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="1.7198341644066256E-184" />
-      <entry key="S5" value="3.1202876255585192E-74" />
-      <entry key="S10" value="1.7664335893428094E-37" />
-      <entry key="S30" value="5.610898838627872E-13" />
-      <entry key="S60" value="7.490861869110351E-7" />
-      <entry key="M2" value="8.70664292622684E-4" />
-      <entry key="M5" value="0.06724162925308066" />
-      <entry key="M10" value="0.3326358069665582" />
-      <entry key="M15" value="0.5973407003117408" />
-      <entry key="M30" value="1.1664526573688658" />
-      <entry key="H1" value="1.7689456470847418" />
-      <entry key="H2" value="2.2640047339178415" />
-      <entry key="H4" value="2.593799049302579" />
-      <entry key="D1" value="2.9261076542928905" />
-      <entry key="W1" value="2.9892790785524626" />
+      <entry key="S2" value="2.4629544024883897E-231" />
+      <entry key="S5" value="5.709295854909841E-93" />
+      <entry key="S10" value="7.555988257607234E-47" />
+      <entry key="S30" value="4.227631177227676E-16" />
+      <entry key="S60" value="2.056194132136604E-8" />
+      <entry key="M2" value="1.4425035712374159E-4" />
+      <entry key="M5" value="0.03276006034760348" />
+      <entry key="M10" value="0.23217862248433205" />
+      <entry key="M15" value="0.47002857561961936" />
+      <entry key="M30" value="1.034708923191251" />
+      <entry key="H1" value="1.6660576600524863" />
+      <entry key="H2" value="2.197177282329802" />
+      <entry key="H4" value="2.5552312574366063" />
+      <entry key="D1" value="2.918810820888319" />
+      <entry key="W1" value="2.9882130295569134" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.592114982241141" />
-      <entry key="MS500" value="3.5622393150420892" />
-      <entry key="S2" value="4.565988600055358" />
-      <entry key="S5" value="4.819349738313858" />
-      <entry key="S10" value="4.919579385076621" />
-      <entry key="S30" value="5.782472949837758" />
-      <entry key="S60" value="7.706022581596742" />
-      <entry key="M2" value="10.823319865622231" />
-      <entry key="M5" value="21.583399326443775" />
-      <entry key="M10" value="40.77408769092795" />
-      <entry key="M15" value="59.27978473642384" />
-      <entry key="M30" value="106.54700591094574" />
-      <entry key="H1" value="165.03318594509378" />
-      <entry key="H2" value="216.3112552920318" />
-      <entry key="H4" value="251.31752022225965" />
-      <entry key="D1" value="287.01765708566313" />
-      <entry key="W1" value="293.8409949119251" />
+      <entry key="MS100" value="2.152554789760172" />
+      <entry key="MS500" value="3.8549151892975217" />
+      <entry key="S2" value="4.660092435043213" />
+      <entry key="S5" value="4.859034107000067" />
+      <entry key="S10" value="4.92911538154687" />
+      <entry key="S30" value="5.206434411870622" />
+      <entry key="S60" value="6.262652525179333" />
+      <entry key="M2" value="9.092757632122156" />
+      <entry key="M5" value="19.18155155152061" />
+      <entry key="M10" value="37.74180721624203" />
+      <entry key="M15" value="56.154261057552944" />
+      <entry key="M30" value="104.26127788760962" />
+      <entry key="H1" value="165.30671790961878" />
+      <entry key="H2" value="219.86212240235943" />
+      <entry key="H4" value="257.548421686165" />
+      <entry key="D1" value="296.2965400649794" />
+      <entry key="W1" value="303.73543502987457" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -171,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="8079000" />
+      <workItem from="1785593626938" duration="8419000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -421,7 +419,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785602267804</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="chore(ide): remove vercel configuration&#10;&#10;Remove vercel.json to simplify project configuration and &#10;reduce complexity. This change improves project maintainability &#10;and removes redundant settings.">
+      <option name="closed" value="true" />
+      <created>1785602434378</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1785602434378</updated>
+    </task>
+    <task id="LOCAL-00033" summary="refactor(dashboard): remove unnecessary typography component&#10;&#10;Remove unused typography component to simplify &#10;dashboard layout and improve readability. This &#10;reduces visual noise and enhances user experience.">
+      <option name="closed" value="true" />
+      <created>1785602566881</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1785602566881</updated>
+    </task>
+    <task id="LOCAL-00034" summary="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience.">
+      <option name="closed" value="true" />
+      <created>1785602680806</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1785602680806</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,31 +461,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update ver" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintain" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability." />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces &#10;configuration" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces &#10;configuration complexity" />
-    <MESSAGE value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces &#10;configuration complexity." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(ide): update vercel configuration&#10;&#10;Update vercel.json to include new route configurations &#10;and remove redundant settings for better maintainability. &#10;This improves the overall project structure and reduces &#10;configuration complexity." />
+    <MESSAGE value="chore(ci" />
+    <MESSAGE value="chore(ci): configure" />
+    <MESSAGE value="chore(ci): configure ver" />
+    <MESSAGE value="chore(ci): configure vercel" />
+    <MESSAGE value="chore(ci): configure vercel deployment" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add ver" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform." />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user" />
+    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
   </component>
 </project>
