@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,61 +51,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.284153690144344" />
-      <entry key="MS500" value="3.904509488826568" />
-      <entry key="S2" value="4.675228810770674" />
-      <entry key="S5" value="4.865358574205025" />
-      <entry key="S10" value="4.932325317603842" />
-      <entry key="S30" value="5.207597468924123" />
-      <entry key="S60" value="6.263409224816479" />
-      <entry key="M2" value="9.093194444586313" />
-      <entry key="M5" value="19.1494013378374" />
-      <entry key="M10" value="37.510542906399145" />
-      <entry key="M15" value="55.68531270089258" />
-      <entry key="M30" value="103.22781331677876" />
-      <entry key="H1" value="163.64182187275318" />
-      <entry key="H2" value="217.66579786901946" />
-      <entry key="H4" value="254.99371665787586" />
-      <entry key="D1" value="293.3778347032808" />
-      <entry key="W1" value="300.7472375619626" />
+      <entry key="MS100" value="1.8582290016353324" />
+      <entry key="MS500" value="3.7696068708029173" />
+      <entry key="S2" value="4.643740384217304" />
+      <entry key="S5" value="5.338552707852242" />
+      <entry key="S10" value="7.208530520737004" />
+      <entry key="S30" value="12.31544899281169" />
+      <entry key="S60" value="15.318633295929041" />
+      <entry key="M2" value="17.55991740699844" />
+      <entry key="M5" value="22.310528642384895" />
+      <entry key="M10" value="34.875481370626645" />
+      <entry key="M15" value="50.27259033001772" />
+      <entry key="M30" value="96.3543828648865" />
+      <entry key="H1" value="161.27339913583646" />
+      <entry key="H2" value="223.1709450943379" />
+      <entry key="H4" value="267.55357027117833" />
+      <entry key="D1" value="314.34406078709975" />
+      <entry key="W1" value="323.44858702114226" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="2.4629544024883897E-231" />
-      <entry key="S5" value="5.709295854909841E-93" />
-      <entry key="S10" value="7.555988257607234E-47" />
-      <entry key="S30" value="4.227631177227676E-16" />
-      <entry key="S60" value="2.056194132136604E-8" />
-      <entry key="M2" value="1.4425035712374159E-4" />
-      <entry key="M5" value="0.03276006034760348" />
-      <entry key="M10" value="0.23217862248433205" />
-      <entry key="M15" value="0.47002857561961936" />
-      <entry key="M30" value="1.034708923191251" />
-      <entry key="H1" value="1.6660576600524863" />
-      <entry key="H2" value="2.197177282329802" />
-      <entry key="H4" value="2.5552312574366063" />
-      <entry key="D1" value="2.918810820888319" />
-      <entry key="W1" value="2.9882130295569134" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="1.0217524224245854E-144" />
+      <entry key="S10" value="1.0108176998967649E-72" />
+      <entry key="S30" value="1.0035929763247855E-24" />
+      <entry key="S60" value="1.0018307923343945E-12" />
+      <entry key="M2" value="1.0068899992504607E-6" />
+      <entry key="M5" value="0.004496667187236834" />
+      <entry key="M10" value="0.08601917169025179" />
+      <entry key="M15" value="0.24245972742730024" />
+      <entry key="M30" value="0.7431489521270276" />
+      <entry key="H1" value="1.41194852925808" />
+      <entry key="H2" value="2.022690891786966" />
+      <entry key="H4" value="2.451672303412692" />
+      <entry key="D1" value="2.898753699284254" />
+      <entry key="W1" value="2.9852709206432086" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="2.152554789760172" />
-      <entry key="MS500" value="3.8549151892975217" />
-      <entry key="S2" value="4.660092435043213" />
-      <entry key="S5" value="4.859034107000067" />
-      <entry key="S10" value="4.92911538154687" />
-      <entry key="S30" value="5.206434411870622" />
-      <entry key="S60" value="6.262652525179333" />
-      <entry key="M2" value="9.092757632122156" />
-      <entry key="M5" value="19.18155155152061" />
-      <entry key="M10" value="37.74180721624203" />
-      <entry key="M15" value="56.154261057552944" />
-      <entry key="M30" value="104.26127788760962" />
-      <entry key="H1" value="165.30671790961878" />
-      <entry key="H2" value="219.86212240235943" />
-      <entry key="H4" value="257.548421686165" />
-      <entry key="D1" value="296.2965400649794" />
-      <entry key="W1" value="303.73543502987457" />
+      <entry key="MS100" value="1.7648762453704445" />
+      <entry key="MS500" value="3.7291364348030314" />
+      <entry key="S2" value="4.631201185664751" />
+      <entry key="S5" value="5.332654483376833" />
+      <entry key="S10" value="7.204320519722642" />
+      <entry key="S30" value="12.312918666871493" />
+      <entry key="S60" value="15.317046051249466" />
+      <entry key="M2" value="17.559003409363715" />
+      <entry key="M5" value="22.314525621276786" />
+      <entry key="M10" value="34.96093713003886" />
+      <entry key="M15" value="50.51433802628196" />
+      <entry key="M30" value="97.0965577109014" />
+      <entry key="H1" value="162.6843221705867" />
+      <entry key="H2" value="225.19283020819708" />
+      <entry key="H4" value="270.00472723924884" />
+      <entry key="D1" value="317.2427080046496" />
+      <entry key="W1" value="326.43384214565185" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -169,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="8419000" />
+      <workItem from="1785593626938" duration="9255000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -443,7 +448,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785602680806</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings.">
+      <option name="closed" value="true" />
+      <created>1785602877239</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1785602877239</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -461,8 +474,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore(ci" />
-    <MESSAGE value="chore(ci): configure" />
     <MESSAGE value="chore(ci): configure ver" />
     <MESSAGE value="chore(ci): configure vercel" />
     <MESSAGE value="chore(ci): configure vercel deployment" />
@@ -486,6 +497,8 @@
     <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience" />
     <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user" />
     <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
+    <MESSAGE value="{&quot;error&quot;:{&quot;message&quot;:&quot;Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kxncw55kez0sq9k5ctvpqntn` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99564, Requested 5593. Please try again in 1h14m15.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing&quot;,&quot;type&quot;:&quot;tokens&quot;,&quot;code&quot;:&quot;rate_limit_exceeded&quot;}}" />
+    <MESSAGE value="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings." />
+    <option name="LAST_COMMIT_MESSAGE" value="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings." />
   </component>
 </project>

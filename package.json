@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@mui/icons-material": "^9.2.0",
+    "@vitejs/plugin-react": "^6.0.4",
     "date-fns": "^4.4.0",
     "ra-data-fakerest": "^5.15.0",
     "ra-data-simple-rest": "^5.15.0",
@@ -34,7 +35,6 @@
     "@mui/utils": "^9.2.0",
     "@types/react": "^19.2.17",
     "@types/react-dom": "^19.2.3",
-    "@vitejs/plugin-react": "^6.0.4",
     "concurrently": "^9.0.1",
     "oxlint": "^1.75.0"
   }
