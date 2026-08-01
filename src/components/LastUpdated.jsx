@@ -1,23 +1,22 @@
 import { useEffect, useState } from 'react';
-import { Box, Typography, Paper, Skeleton } from '@mui/material';
-import { AccessTime, Update } from '@mui/icons-material';
-
-const API_URL = import.meta.env.VITE_API_URL || 'http://localhost:4000';
+import { Box, Typography, Paper, Skeleton, Alert } from '@mui/material';
+import { AccessTime, Update, Refresh } from '@mui/icons-material';
+import { IconButton } from '@mui/material';
+import { fetchLatestTimestamp } from '../api';
 
 export default function LastUpdated() {
     const [data, setData] = useState(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
 
-    const fetchLastTimestamp = async () => {
+    const loadData = async () => {
         try {
             setLoading(true);
-            const response = await fetch(`${API_URL}/latest-timestamp`);
-            if (!response.ok) throw new Error('Failed to fetch latest timestamp');
-            const result = await response.json();
+            const result = await fetchLatestTimestamp();
             setData(result);
             setError(null);
         } catch (err) {
+            console.error('Error fetching latest timestamp:', err);
             setError(err.message);
         } finally {
             setLoading(false);
@@ -25,10 +24,30 @@ export default function LastUpdated() {
     };
 
     useEffect(() => {
-        fetchLastTimestamp();
-        const interval = setInterval(fetchLastTimestamp, 300000);
+        loadData();
+        const interval = setInterval(loadData, 300000);
         return () => clearInterval(interval);
     }, []);
+
+    const formatDate = (dateString) => {
+        if (!dateString) return 'N/A';
+        try {
+            const date = new Date(dateString);
+            return new Intl.DateTimeFormat('fr-FR', {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZone: 'UTC',
+                timeZoneName: 'short'
+            }).format(date);
+        } catch {
+            return 'Invalid date';
+        }
+    };
 
     if (loading) {
         return (
@@ -45,27 +64,21 @@ export default function LastUpdated() {
     if (error) {
         return (
             <Paper sx={{ p: 2 }}>
-                <Typography color="error">Error: {error}</Typography>
+                <Alert
+                    severity="warning"
+                    action={
+                        <IconButton color="inherit" size="small" onClick={loadData}>
+                            <Refresh />
+                        </IconButton>
+                    }
+                >
+                    {error}
+                </Alert>
             </Paper>
         );
     }
 
     if (!data) return null;
-
-    const formatDate = (dateString) => {
-        const date = new Date(dateString);
-        return new Intl.DateTimeFormat('fr-FR', {
-            weekday: 'long',
-            year: 'numeric',
-            month: 'long',
-            day: 'numeric',
-            hour: '2-digit',
-            minute: '2-digit',
-            second: '2-digit',
-            timeZone: 'UTC',
-            timeZoneName: 'short'
-        }).format(date);
-    };
 
     return (
         <Paper sx={{ p: 2, display: 'flex', alignItems: 'center', gap: 2, flexWrap: 'wrap' }}>
@@ -83,11 +96,14 @@ export default function LastUpdated() {
             </Box>
             <Box sx={{ display: 'flex', gap: 2, ml: 'auto' }}>
                 <Typography variant="caption" color="text.secondary">
-                    <strong>{data.total_records}</strong> enregistrements
+                    <strong>{data.total_records?.toLocaleString() || 0}</strong> enregistrements
                 </Typography>
                 <Typography variant="caption" color="text.secondary">
-                    <strong>{data.total_cities}</strong> villes
+                    <strong>{data.total_cities || 0}</strong> villes
                 </Typography>
+                <IconButton size="small" onClick={loadData} title="Rafraîchir">
+                    <Refresh fontSize="small" />
+                </IconButton>
             </Box>
         </Paper>
     );
