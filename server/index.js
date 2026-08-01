@@ -1,9 +1,15 @@
+import dotenv from 'dotenv';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+dotenv.config({ path: path.join(__dirname, '..', '.env') });
+
 import express from 'express';
 import cors from 'cors';
 import pg from 'pg';
-import dotenv from 'dotenv';
-
-dotenv.config();
 
 const { Pool } = pg;
 
@@ -20,7 +26,7 @@ const pool = new Pool({
 
 const app = express();
 
-const allowedOrigins = (process.env.CORS_ORIGIN || 'https://athlas-ia.vercel.app').split(',');
+const allowedOrigins = (process.env.CORS_ORIGIN || 'http://localhost:5173,http://localhost:5174').split(',');
 
 app.use(cors({
     origin: function (origin, callback) {
@@ -266,4 +272,10 @@ app.get('/health', async (_req, res) => {
     }
 });
 
-export default app;
+const port = process.env.PORT || 4000;
+app.listen(port, () => {
+    console.log(`✅ AQI API listening on http://localhost:${port}`);
+    console.log(`🔗 Connected to Neon Postgres host: ${process.env.DB_HOST}`);
+    console.log(`📊 Health check: http://localhost:${port}/health`);
+    console.log(`🔄 Latest timestamp: http://localhost:${port}/latest-timestamp`);
+});
