@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings.">
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,61 +52,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.8582290016353324" />
-      <entry key="MS500" value="3.7696068708029173" />
-      <entry key="S2" value="4.643740384217304" />
-      <entry key="S5" value="5.338552707852242" />
-      <entry key="S10" value="7.208530520737004" />
-      <entry key="S30" value="12.31544899281169" />
-      <entry key="S60" value="15.318633295929041" />
-      <entry key="M2" value="17.55991740699844" />
-      <entry key="M5" value="22.310528642384895" />
-      <entry key="M10" value="34.875481370626645" />
-      <entry key="M15" value="50.27259033001772" />
-      <entry key="M30" value="96.3543828648865" />
-      <entry key="H1" value="161.27339913583646" />
-      <entry key="H2" value="223.1709450943379" />
-      <entry key="H4" value="267.55357027117833" />
-      <entry key="D1" value="314.34406078709975" />
-      <entry key="W1" value="323.44858702114226" />
+      <entry key="MS100" value="1.0312581189480056E-11" />
+      <entry key="MS500" value="0.020136173673601175" />
+      <entry key="S2" value="1.8734914213842473" />
+      <entry key="S5" value="5.053895883652935" />
+      <entry key="S10" value="7.0958302129902595" />
+      <entry key="S30" value="9.279287414882836" />
+      <entry key="S60" value="10.80915432588536" />
+      <entry key="M2" value="12.815766595357504" />
+      <entry key="M5" value="20.55809234830206" />
+      <entry key="M10" value="36.30136294224114" />
+      <entry key="M15" value="52.522948564679226" />
+      <entry key="M30" value="100.08939558976604" />
+      <entry key="H1" value="171.4951453667509" />
+      <entry key="H2" value="244.31239519667355" />
+      <entry key="H4" value="298.8850508632702" />
+      <entry key="D1" value="358.2435195990042" />
+      <entry key="W1" value="369.99193585757666" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="1.0217524224245854E-144" />
-      <entry key="S10" value="1.0108176998967649E-72" />
-      <entry key="S30" value="1.0035929763247855E-24" />
-      <entry key="S60" value="1.0018307923343945E-12" />
-      <entry key="M2" value="1.0068899992504607E-6" />
-      <entry key="M5" value="0.004496667187236834" />
-      <entry key="M10" value="0.08601917169025179" />
-      <entry key="M15" value="0.24245972742730024" />
-      <entry key="M30" value="0.7431489521270276" />
-      <entry key="H1" value="1.41194852925808" />
-      <entry key="H2" value="2.022690891786966" />
-      <entry key="H4" value="2.451672303412692" />
-      <entry key="D1" value="2.898753699284254" />
-      <entry key="W1" value="2.9852709206432086" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.000000002084701" />
+      <entry key="S60" value="1.0000645127546137" />
+      <entry key="M2" value="1.0113563784483977" />
+      <entry key="M5" value="1.2530646426843886" />
+      <entry key="M10" value="1.733748428494111" />
+      <entry key="M15" value="2.1036035079862505" />
+      <entry key="M30" value="2.893949885314612" />
+      <entry key="H1" value="3.8147169218989365" />
+      <entry key="H2" value="4.645461125013576" />
+      <entry key="H4" value="5.2352318807276115" />
+      <entry key="D1" value="5.85780799737034" />
+      <entry key="W1" value="5.979286164974425" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.7648762453704445" />
-      <entry key="MS500" value="3.7291364348030314" />
-      <entry key="S2" value="4.631201185664751" />
-      <entry key="S5" value="5.332654483376833" />
-      <entry key="S10" value="7.204320519722642" />
-      <entry key="S30" value="12.312918666871493" />
-      <entry key="S60" value="15.317046051249466" />
-      <entry key="M2" value="17.559003409363715" />
-      <entry key="M5" value="22.314525621276786" />
-      <entry key="M10" value="34.96093713003886" />
-      <entry key="M15" value="50.51433802628196" />
-      <entry key="M30" value="97.0965577109014" />
-      <entry key="H1" value="162.6843221705867" />
-      <entry key="H2" value="225.19283020819708" />
-      <entry key="H4" value="270.00472723924884" />
-      <entry key="D1" value="317.2427080046496" />
-      <entry key="W1" value="326.43384214565185" />
+      <entry key="MS100" value="4.128923730280555E-8" />
+      <entry key="MS500" value="0.05321208745289932" />
+      <entry key="S2" value="2.2926267060304966" />
+      <entry key="S5" value="5.756054942868328" />
+      <entry key="S10" value="7.93257355997209" />
+      <entry key="S30" value="10.221163120020387" />
+      <entry key="S60" value="11.77955635645264" />
+      <entry key="M2" value="13.811989468767441" />
+      <entry key="M5" value="21.80418483900317" />
+      <entry key="M10" value="38.030709132667994" />
+      <entry key="M15" value="54.623092111273685" />
+      <entry key="M30" value="102.98090390888268" />
+      <entry key="H1" value="175.30805750929426" />
+      <entry key="H2" value="248.95662220051483" />
+      <entry key="H4" value="304.11953308141705" />
+      <entry key="D1" value="364.1011775910329" />
+      <entry key="W1" value="375.9711998693079" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -174,7 +175,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="9255000" />
+      <workItem from="1785593626938" duration="10511000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -456,7 +457,15 @@
       <option name="project" value="LOCAL" />
       <updated>1785602877239</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability.">
+      <option name="closed" value="true" />
+      <created>1785603626850</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1785603626850</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -474,8 +483,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore(ci): configure ver" />
-    <MESSAGE value="chore(ci): configure vercel" />
     <MESSAGE value="chore(ci): configure vercel deployment" />
     <MESSAGE value="chore(ci): configure vercel deployment settings" />
     <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add" />
@@ -499,6 +506,8 @@
     <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
     <MESSAGE value="{&quot;error&quot;:{&quot;message&quot;:&quot;Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kxncw55kez0sq9k5ctvpqntn` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99564, Requested 5593. Please try again in 1h14m15.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing&quot;,&quot;type&quot;:&quot;tokens&quot;,&quot;code&quot;:&quot;rate_limit_exceeded&quot;}}" />
     <MESSAGE value="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings." />
-    <option name="LAST_COMMIT_MESSAGE" value="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings." />
+    <MESSAGE value="{&quot;error&quot;:{&quot;message&quot;:&quot;Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kxncw55kez0sq9k5ctvpqntn` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98691, Requested 5027. Please try again in 53m32.352s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing&quot;,&quot;type&quot;:&quot;tokens&quot;,&quot;code&quot;:&quot;rate_limit_exceeded&quot;}}" />
+    <MESSAGE value="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability." />
   </component>
 </project>
