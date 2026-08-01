@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,61 +46,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.6470031225335027" />
-      <entry key="MS500" value="3.559461814247918" />
-      <entry key="S2" value="4.563739244974032" />
-      <entry key="S5" value="4.950581980111345" />
-      <entry key="S10" value="5.743384853700643" />
-      <entry key="S30" value="8.55368699826803" />
-      <entry key="S60" value="12.50565737638673" />
-      <entry key="M2" value="21.81028866481363" />
-      <entry key="M5" value="42.27587413083938" />
-      <entry key="M10" value="61.32328032614821" />
-      <entry key="M15" value="75.65312055389099" />
-      <entry key="M30" value="106.83788588559615" />
-      <entry key="H1" value="138.51871694519357" />
-      <entry key="H2" value="162.25947139212133" />
-      <entry key="H4" value="176.96091187056462" />
-      <entry key="D1" value="190.98103877213407" />
-      <entry key="W1" value="193.5640958336997" />
+      <entry key="MS100" value="5.204537896470058E-7" />
+      <entry key="MS500" value="0.09673382463776381" />
+      <entry key="S2" value="1.9787208069140503" />
+      <entry key="S5" value="4.93647213408684" />
+      <entry key="S10" value="7.413149111310385" />
+      <entry key="S30" value="10.82456311732382" />
+      <entry key="S60" value="13.079758096077962" />
+      <entry key="M2" value="15.80308141912296" />
+      <entry key="M5" value="27.912235865488913" />
+      <entry key="M10" value="48.95799954210845" />
+      <entry key="M15" value="66.21638109221827" />
+      <entry key="M30" value="103.47314391844304" />
+      <entry key="H1" value="141.95103283995584" />
+      <entry key="H2" value="171.50476132204736" />
+      <entry key="H4" value="190.12445509699702" />
+      <entry key="D1" value="208.1015563933502" />
+      <entry key="W1" value="211.4365169385599" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="0.0" />
-      <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="9.651354020264996E-204" />
-      <entry key="S10" value="3.1066628430302775E-102" />
-      <entry key="S30" value="1.459143621604526E-34" />
-      <entry key="S60" value="1.2079501734775847E-17" />
-      <entry key="M2" value="3.475557758803008E-9" />
-      <entry key="M5" value="4.1343744120232495E-4" />
-      <entry key="M10" value="0.02033316112173228" />
-      <entry key="M15" value="0.07449662559689273" />
-      <entry key="M30" value="0.2729406997809098" />
-      <entry key="H1" value="0.5224372687518675" />
-      <entry key="H2" value="0.7227982213258864" />
-      <entry key="H4" value="0.8501754062109086" />
-      <entry key="D1" value="0.97331053225943" />
-      <entry key="W1" value="0.9961428724111577" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0" />
+      <entry key="S10" value="1.0" />
+      <entry key="S30" value="1.0" />
+      <entry key="S60" value="1.0" />
+      <entry key="M2" value="1.0000000001277218" />
+      <entry key="M5" value="1.0001102823855041" />
+      <entry key="M10" value="1.010501542053628" />
+      <entry key="M15" value="1.047955164369298" />
+      <entry key="M30" value="1.21898667623693" />
+      <entry key="H1" value="1.4679601224858063" />
+      <entry key="H2" value="1.6840761086939116" />
+      <entry key="H4" value="1.827088936387078" />
+      <entry key="D1" value="1.9688548149136604" />
+      <entry key="W1" value="1.9954901275642125" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.5999049801370193" />
-      <entry key="MS500" value="3.5378848562894234" />
-      <entry key="S2" value="4.556786370321975" />
-      <entry key="S5" value="4.94755613505211" />
-      <entry key="S10" value="5.741624934400334" />
-      <entry key="S30" value="8.552813786605215" />
-      <entry key="S60" value="12.504987577658834" />
-      <entry key="M2" value="21.809646492007097" />
-      <entry key="M5" value="42.2757251888506" />
-      <entry key="M10" value="61.34300147798673" />
-      <entry key="M15" value="75.72680609328141" />
-      <entry key="M30" value="107.10973889962109" />
-      <entry key="H1" value="139.04019066481231" />
-      <entry key="H2" value="162.9816201515646" />
-      <entry key="H4" value="177.81070931715155" />
-      <entry key="D1" value="191.95427773963775" />
-      <entry key="W1" value="194.5602282555653" />
+      <entry key="MS100" value="1.6409433877717745E-5" />
+      <entry key="MS500" value="0.2056353779678795" />
+      <entry key="S2" value="2.5499423637003167" />
+      <entry key="S5" value="5.733973937677262" />
+      <entry key="S10" value="8.30536827996761" />
+      <entry key="S30" value="11.786629768539147" />
+      <entry key="S60" value="14.06024288342617" />
+      <entry key="M2" value="16.793070494829177" />
+      <entry key="M5" value="28.90812432567041" />
+      <entry key="M10" value="49.966133829028045" />
+      <entry key="M15" value="67.26244309378168" />
+      <entry key="M30" value="104.69057053777834" />
+      <entry key="H1" value="143.4177857216599" />
+      <entry key="H2" value="173.18805055914504" />
+      <entry key="H4" value="191.95109020551644" />
+      <entry key="D1" value="210.0703256116273" />
+      <entry key="W1" value="213.43199457096654" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -169,7 +169,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="5706000" />
+      <workItem from="1785593626938" duration="6027000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -291,38 +291,94 @@
       <option name="project" value="LOCAL" />
       <updated>1785600007570</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="feat(server): initialize Express server with database connection&#10;&#10;Create an Express server with PostgreSQL database connection &#10;and implement API endpoints for air quality data retrieval. &#10;This includes measures and cities data with filtering, &#10;sorting, and pagination capabilities. The server also &#10;provides health check and latest timestamp endpoints.">
+      <option name="closed" value="true" />
+      <created>1785600089363</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600089363</updated>
+    </task>
+    <task id="LOCAL-00017" summary="chore(package): add project dependencies&#10;&#10;Initialize project with basic dependencies and scripts to &#10;improve development workflow and enable API functionality. &#10;This sets up the foundation for the aqi-dashboard-api.">
+      <option name="closed" value="true" />
+      <created>1785600096747</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600096747</updated>
+    </task>
+    <task id="LOCAL-00018" summary="chore(server): add package-lock.json with resolved dependencies">
+      <option name="closed" value="true" />
+      <created>1785600108762</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600108762</updated>
+    </task>
+    <task id="LOCAL-00019" summary="chore(ide): initialize IntelliJ IDEA project settings&#10;&#10;Add necessary configuration files to enable IntelliJ IDEA &#10;project settings and improve development experience. &#10;This change helps keep the project repository organized.">
+      <option name="closed" value="true" />
+      <created>1785600116162</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600116162</updated>
+    </task>
+    <task id="LOCAL-00020" summary="docs(server): add API documentation for aqi-dashboard&#10;&#10;Explain API endpoints and setup process for &#10;server and dashboard connectivity. This &#10;improves developer understanding of the &#10;API and its usage.">
+      <option name="closed" value="true" />
+      <created>1785600122761</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600122761</updated>
+    </task>
+    <task id="LOCAL-00021" summary="feat(server): add environment variable configuration&#10;&#10;Load environment variables from .env file in root directory&#10;to improve security and flexibility. This allows for easy &#10;switching between development and production environments. &#10;Configure CORS allowed origins and server port dynamically.">
+      <option name="closed" value="true" />
+      <created>1785600230824</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600230824</updated>
+    </task>
+    <task id="LOCAL-00022" summary="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling.">
+      <option name="closed" value="true" />
+      <created>1785600273770</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600273770</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat" />
-    <MESSAGE value="feat(build" />
-    <MESSAGE value="feat(build):" />
-    <MESSAGE value="feat(build): configure" />
-    <MESSAGE value="feat(build): configure proxy" />
-    <MESSAGE value="feat(build): configure proxy and" />
-    <MESSAGE value="feat(build): configure proxy and optimize" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:400" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000." />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Im" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks." />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces" />
-    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting," />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities." />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;re" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrie" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling" />
+    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
   </component>
 </project>
