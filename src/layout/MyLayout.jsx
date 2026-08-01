@@ -3,5 +3,5 @@ import MyAppBar from './MyAppBar';
 
 export default function MyLayout(props) {
 
-    return <Layout {...props} appBar={MyAppBar}/>;
+    return <Layout {...props} appBar={MyAppBar} children={props.children}/>;
 }
