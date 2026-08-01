@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability.">
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/api/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/vercel.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/MyAppBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MyAppBar.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,61 +49,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0312581189480056E-11" />
-      <entry key="MS500" value="0.020136173673601175" />
-      <entry key="S2" value="1.8734914213842473" />
-      <entry key="S5" value="5.053895883652935" />
-      <entry key="S10" value="7.0958302129902595" />
-      <entry key="S30" value="9.279287414882836" />
-      <entry key="S60" value="10.80915432588536" />
-      <entry key="M2" value="12.815766595357504" />
-      <entry key="M5" value="20.55809234830206" />
-      <entry key="M10" value="36.30136294224114" />
-      <entry key="M15" value="52.522948564679226" />
-      <entry key="M30" value="100.08939558976604" />
-      <entry key="H1" value="171.4951453667509" />
-      <entry key="H2" value="244.31239519667355" />
-      <entry key="H4" value="298.8850508632702" />
-      <entry key="D1" value="358.2435195990042" />
-      <entry key="W1" value="369.99193585757666" />
+      <entry key="MS100" value="2.1065875125699787" />
+      <entry key="MS500" value="3.862906990489402" />
+      <entry key="S2" value="4.665485277181658" />
+      <entry key="S5" value="4.88223298837167" />
+      <entry key="S10" value="5.408824639759936" />
+      <entry key="S30" value="9.99689594067858" />
+      <entry key="S60" value="15.060785368588988" />
+      <entry key="M2" value="20.284893663541773" />
+      <entry key="M5" value="28.95822835537703" />
+      <entry key="M10" value="42.789635995880644" />
+      <entry key="M15" value="57.732865235817" />
+      <entry key="M30" value="103.97231657797202" />
+      <entry key="H1" value="178.24128718254747" />
+      <entry key="H2" value="258.2931066770917" />
+      <entry key="H4" value="320.4371238807816" />
+      <entry key="D1" value="389.7212700840076" />
+      <entry key="W1" value="403.61887227146275" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.000000002084701" />
-      <entry key="S60" value="1.0000645127546137" />
-      <entry key="M2" value="1.0113563784483977" />
-      <entry key="M5" value="1.2530646426843886" />
-      <entry key="M10" value="1.733748428494111" />
-      <entry key="M15" value="2.1036035079862505" />
-      <entry key="M30" value="2.893949885314612" />
-      <entry key="H1" value="3.8147169218989365" />
-      <entry key="H2" value="4.645461125013576" />
-      <entry key="H4" value="5.2352318807276115" />
-      <entry key="D1" value="5.85780799737034" />
-      <entry key="W1" value="5.979286164974425" />
+      <entry key="MS100" value="1.2924384952138765E-249" />
+      <entry key="MS500" value="1.668330067693761E-50" />
+      <entry key="S2" value="3.593937284540497E-13" />
+      <entry key="S5" value="1.0525147667761413E-5" />
+      <entry key="S10" value="0.0032442483979747013" />
+      <entry key="S30" value="0.14803737379892096" />
+      <entry key="S60" value="0.3848006055120168" />
+      <entry key="M2" value="0.6270226494316979" />
+      <entry key="M5" value="0.9949028190702953" />
+      <entry key="M10" value="1.5452289234384973" />
+      <entry key="M15" value="2.016655783258705" />
+      <entry key="M30" value="3.0406566881020014" />
+      <entry key="H1" value="4.212039473135518" />
+      <entry key="H2" value="5.2652715469108955" />
+      <entry key="H4" value="6.017119128105811" />
+      <entry key="D1" value="6.81651235068487" />
+      <entry key="W1" value="6.973248694294759" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="4.128923730280555E-8" />
-      <entry key="MS500" value="0.05321208745289932" />
-      <entry key="S2" value="2.2926267060304966" />
-      <entry key="S5" value="5.756054942868328" />
-      <entry key="S10" value="7.93257355997209" />
-      <entry key="S30" value="10.221163120020387" />
-      <entry key="S60" value="11.77955635645264" />
-      <entry key="M2" value="13.811989468767441" />
-      <entry key="M5" value="21.80418483900317" />
-      <entry key="M10" value="38.030709132667994" />
-      <entry key="M15" value="54.623092111273685" />
-      <entry key="M30" value="102.98090390888268" />
-      <entry key="H1" value="175.30805750929426" />
-      <entry key="H2" value="248.95662220051483" />
-      <entry key="H4" value="304.11953308141705" />
-      <entry key="D1" value="364.1011775910329" />
-      <entry key="W1" value="375.9711998693079" />
+      <entry key="MS100" value="1.9847455235176639" />
+      <entry key="MS500" value="3.8174210348610758" />
+      <entry key="S2" value="4.651627034407749" />
+      <entry key="S5" value="4.876429120265992" />
+      <entry key="S10" value="5.408378844239986" />
+      <entry key="S30" value="10.134870433586029" />
+      <entry key="S60" value="15.433252780911216" />
+      <entry key="M2" value="20.901923539807186" />
+      <entry key="M5" value="29.946877624825664" />
+      <entry key="M10" value="44.33030672831456" />
+      <entry key="M15" value="59.745716645384064" />
+      <entry key="M30" value="107.0101736554717" />
+      <entry key="H1" value="182.45126442294722" />
+      <entry key="H2" value="263.5569730598762" />
+      <entry key="H4" value="326.4533884402557" />
+      <entry key="D1" value="396.5376107909356" />
+      <entry key="W1" value="410.59209559262473" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -175,7 +172,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="10511000" />
+      <workItem from="1785593626938" duration="11117000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -465,7 +462,55 @@
       <option name="project" value="LOCAL" />
       <updated>1785603626850</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="fix(code-format): remove trailing newline&#10;&#10;Ensure consistent file formatting by removing unnecessary &#10;newlines at the end of files to follow standard conventions. &#10;This improves code readability and maintainability.">
+      <option name="closed" value="true" />
+      <created>1785604901647</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1785604901647</updated>
+    </task>
+    <task id="LOCAL-00038" summary="feat(api): enhance endpoints with pagination, sorting, and filtering&#10;&#10;Add support for pagination, sorting, and filtering to `/api/cities` and `/api/measures` endpoints. Introduce utility functions for parsing query parameters. Add new endpoints for fetching single entities and optimize CORS configuration.">
+      <option name="closed" value="true" />
+      <created>1785604911703</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1785604911703</updated>
+    </task>
+    <task id="LOCAL-00039" summary="refactor(main): simplify entry point by extracting `App` component&#10;&#10;Replace inline `App` definition with a structured `App.jsx` component and remove unused lazy-loaded resources for cleaner and more maintainable code.">
+      <option name="closed" value="true" />
+      <created>1785604919805</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1785604919805</updated>
+    </task>
+    <task id="LOCAL-00040" summary="refactor(build): remove unused asset routes&#10;&#10;Remove unused routes for favicon, icons, and logo to &#10;reduce configuration clutter and improve build efficiency. &#10;This simplifies the build process and reduces potential &#10;errors.">
+      <option name="closed" value="true" />
+      <created>1785604927096</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1785604927096</updated>
+    </task>
+    <task id="LOCAL-00041" summary="chore(ide): update workspace settings and tasks&#10;&#10;Refine `.idea/workspace.xml` by modifying IDE tasks and updating settings to align with recent project changes. Simplify workspace maintenance and enhance consistency.">
+      <option name="closed" value="true" />
+      <created>1785604936806</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1785604936806</updated>
+    </task>
+    <task id="LOCAL-00042" summary="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information.">
+      <option name="closed" value="true" />
+      <created>1785605111653</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1785605111653</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -483,31 +528,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="chore(ci): configure vercel deployment" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add ver" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform." />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user" />
-    <MESSAGE value="chore(ci): configure vercel deployment settings&#10;&#10;Add vercel.json to define builds and routes for the application&#10;to enable proper deployment and routing on the vercel platform.&#10;This improves the overall deployment process and user experience." />
-    <MESSAGE value="{&quot;error&quot;:{&quot;message&quot;:&quot;Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kxncw55kez0sq9k5ctvpqntn` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 99564, Requested 5593. Please try again in 1h14m15.648s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing&quot;,&quot;type&quot;:&quot;tokens&quot;,&quot;code&quot;:&quot;rate_limit_exceeded&quot;}}" />
-    <MESSAGE value="chore(ide): update workspace settings  &#10;&#10;Streamline `.idea/workspace.xml` by refining IDE tasks and settings." />
-    <MESSAGE value="{&quot;error&quot;:{&quot;message&quot;:&quot;Rate limit reached for model `llama-3.3-70b-versatile` in organization `org_01kxncw55kez0sq9k5ctvpqntn` service tier `on_demand` on tokens per day (TPD): Limit 100000, Used 98691, Requested 5027. Please try again in 53m32.352s. Need more tokens? Upgrade to Dev Tier today at https://console.groq.com/settings/billing&quot;,&quot;type&quot;:&quot;tokens&quot;,&quot;code&quot;:&quot;rate_limit_exceeded&quot;}}" />
-    <MESSAGE value="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(admin): integrate `react-admin` and lazy load resources&#10;&#10;Add `react-admin` with lazy loading for resources and a custom layout. Refactor Vite build config to optimize dependency chunks. Improve project initialization and maintainability." />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;re" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;redu" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries." />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enh" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;re" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrie" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information" />
+    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information." />
   </component>
 </project>
