@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information.">
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in the dashboard.">
+      <change beforePath="$PROJECT_DIR$/.idea/aqi-dashboard.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/aqi-dashboard.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/MyAppBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/MyAppBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/analysis/Atlas_analyse_qualite_air.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/analysis/Atlas_analyse_qualite_air.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,61 +50,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="2.1065875125699787" />
-      <entry key="MS500" value="3.862906990489402" />
-      <entry key="S2" value="4.665485277181658" />
-      <entry key="S5" value="4.88223298837167" />
-      <entry key="S10" value="5.408824639759936" />
-      <entry key="S30" value="9.99689594067858" />
-      <entry key="S60" value="15.060785368588988" />
-      <entry key="M2" value="20.284893663541773" />
-      <entry key="M5" value="28.95822835537703" />
-      <entry key="M10" value="42.789635995880644" />
-      <entry key="M15" value="57.732865235817" />
-      <entry key="M30" value="103.97231657797202" />
-      <entry key="H1" value="178.24128718254747" />
-      <entry key="H2" value="258.2931066770917" />
-      <entry key="H4" value="320.4371238807816" />
-      <entry key="D1" value="389.7212700840076" />
-      <entry key="W1" value="403.61887227146275" />
+      <entry key="MS100" value="1.3298787915838715" />
+      <entry key="MS500" value="1.9923747842798996" />
+      <entry key="S2" value="3.8779650332888687" />
+      <entry key="S5" value="6.260312366368876" />
+      <entry key="S10" value="9.182239068494312" />
+      <entry key="S30" value="13.711222391566643" />
+      <entry key="S60" value="16.404548757991897" />
+      <entry key="M2" value="20.082578120531817" />
+      <entry key="M5" value="30.792780649402438" />
+      <entry key="M10" value="47.45403268643599" />
+      <entry key="M15" value="63.4933045341215" />
+      <entry key="M30" value="110.85394733947177" />
+      <entry key="H1" value="187.99817644176838" />
+      <entry key="H2" value="273.8688324659236" />
+      <entry key="H4" value="342.1418536430384" />
+      <entry key="D1" value="419.6148399165924" />
+      <entry key="W1" value="435.3067069109735" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.2924384952138765E-249" />
-      <entry key="MS500" value="1.668330067693761E-50" />
-      <entry key="S2" value="3.593937284540497E-13" />
-      <entry key="S5" value="1.0525147667761413E-5" />
-      <entry key="S10" value="0.0032442483979747013" />
-      <entry key="S30" value="0.14803737379892096" />
-      <entry key="S60" value="0.3848006055120168" />
-      <entry key="M2" value="0.6270226494316979" />
-      <entry key="M5" value="0.9949028190702953" />
-      <entry key="M10" value="1.5452289234384973" />
-      <entry key="M15" value="2.016655783258705" />
-      <entry key="M30" value="3.0406566881020014" />
-      <entry key="H1" value="4.212039473135518" />
-      <entry key="H2" value="5.2652715469108955" />
-      <entry key="H4" value="6.017119128105811" />
-      <entry key="D1" value="6.81651235068487" />
-      <entry key="W1" value="6.973248694294759" />
+      <entry key="MS100" value="6.003961607912382E-29" />
+      <entry key="MS500" value="2.2682325649313387E-6" />
+      <entry key="S2" value="0.038808056627296375" />
+      <entry key="S5" value="0.27262693316631437" />
+      <entry key="S10" value="0.522136891213707" />
+      <entry key="S30" value="0.8052451984600265" />
+      <entry key="S60" value="0.8975347953430894" />
+      <entry key="M2" value="0.9608590091706017" />
+      <entry key="M5" value="1.1933117637311543" />
+      <entry key="M10" value="1.7071192807382694" />
+      <entry key="M15" value="2.202500122191252" />
+      <entry key="M30" value="3.3513878201652982" />
+      <entry key="H1" value="4.705032847915709" />
+      <entry key="H2" value="5.938521340629759" />
+      <entry key="H4" value="6.827506028067734" />
+      <entry key="D1" value="7.780244668424363" />
+      <entry key="W1" value="7.967936635864516" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.9847455235176639" />
-      <entry key="MS500" value="3.8174210348610758" />
-      <entry key="S2" value="4.651627034407749" />
-      <entry key="S5" value="4.876429120265992" />
-      <entry key="S10" value="5.408378844239986" />
-      <entry key="S30" value="10.134870433586029" />
-      <entry key="S60" value="15.433252780911216" />
-      <entry key="M2" value="20.901923539807186" />
-      <entry key="M5" value="29.946877624825664" />
-      <entry key="M10" value="44.33030672831456" />
-      <entry key="M15" value="59.745716645384064" />
-      <entry key="M30" value="107.0101736554717" />
-      <entry key="H1" value="182.45126442294722" />
-      <entry key="H2" value="263.5569730598762" />
-      <entry key="H4" value="326.4533884402557" />
-      <entry key="D1" value="396.5376107909356" />
-      <entry key="W1" value="410.59209559262473" />
+      <entry key="MS100" value="1.2540916240764735" />
+      <entry key="MS500" value="1.9654310414775866" />
+      <entry key="S2" value="3.8875187668087987" />
+      <entry key="S5" value="6.474775679905803" />
+      <entry key="S10" value="9.64849243605238" />
+      <entry key="S30" value="14.487076192892465" />
+      <entry key="S60" value="17.285485694898306" />
+      <entry key="M2" value="21.034317963574722" />
+      <entry key="M5" value="31.980967824788106" />
+      <entry key="M10" value="49.15709559807765" />
+      <entry key="M15" value="65.69221667619667" />
+      <entry key="M30" value="114.2025065124973" />
+      <entry key="H1" value="192.70106224654936" />
+      <entry key="H2" value="279.8058690068035" />
+      <entry key="H4" value="348.9684485382855" />
+      <entry key="D1" value="427.3948999292047" />
+      <entry key="W1" value="443.27461620348146" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -172,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="11117000" />
+      <workItem from="1785593626938" duration="12122000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -510,7 +511,31 @@
       <option name="project" value="LOCAL" />
       <updated>1785605111653</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat(admin): add GitHub link to custom `AppBar`&#10;&#10;Enhance the custom `AppBar` by adding a GitHub profile link with an icon and hover styling. Improve user accessibility and engagement with external resources.">
+      <option name="closed" value="true" />
+      <created>1785605528596</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1785605528596</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat(layout): hide menu button in MyAppBar&#10;&#10;Remove menu button from AppBar component to improve &#10;user interface and simplify layout. This adjustment &#10;enhances overall user experience by reducing visual &#10;clutter and focusing on essential elements.">
+      <option name="closed" value="true" />
+      <created>1785605617530</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1785605617530</updated>
+    </task>
+    <task id="LOCAL-00045" summary="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in the dashboard.">
+      <option name="closed" value="true" />
+      <created>1785606231289</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1785606231289</updated>
+    </task>
+    <option name="localTasksCounter" value="46" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -528,31 +553,31 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;re" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;redu" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries." />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enh" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;re" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrie" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information" />
-    <MESSAGE value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information." />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): enhance city query with air quality data&#10;&#10;Add average air quality index and last measurement &#10;timestamp to city data. Improve query performance by &#10;reducing number of database queries. Enhance data &#10;retrieval for city information." />
+    <MESSAGE value="feat(layout): hide menu button in MyAppBar&#10;&#10;Remove menu button from AppBar component to improve &#10;user interface and simplify layout. This adjustment &#10;enhances overall user experience by reducing visual &#10;clutter and focusing on essential elements" />
+    <MESSAGE value="feat(layout): hide menu button in MyAppBar&#10;&#10;Remove menu button from AppBar component to improve &#10;user interface and simplify layout. This adjustment &#10;enhances overall user experience by reducing visual &#10;clutter and focusing on essential elements." />
+    <MESSAGE value="refactor(api" />
+    <MESSAGE value="refactor(api):" />
+    <MESSAGE value="refactor(api): update" />
+    <MESSAGE value="refactor(api): update city" />
+    <MESSAGE value="refactor(api): update city order" />
+    <MESSAGE value="refactor(api): update city order mapping" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with '" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c'" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in the" />
+    <MESSAGE value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in the dashboard." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): update city order mapping&#10;&#10;Modify cityOrderMap to include new fields and prefix existing &#10;ones with 'c' to improve data consistency and query accuracy.&#10;This enhances data retrieval and display in the dashboard." />
   </component>
 </project>
