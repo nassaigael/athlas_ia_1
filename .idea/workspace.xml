@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CopilotPersistence">
+    <persistenceIdMap>
+      <entry key="_E:/EXAM_DONNEES_IA/atlas-qualite-air-dashboard/aqi-dashboard" value="3HJXuxywoXt5CRWSo7MKiGX0i8y" />
+    </persistenceIdMap>
+  </component>
+  <component name="EmbeddingIndexingInfo">
+    <option name="cachedIndexableFilesCount" value="54" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nassaigael&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nassaigael/athlas_ia_1.git&quot;,
+    &quot;accountId&quot;: &quot;d58ee084-4454-4e0a-9058-3e1a61ca1cac&quot;
+  }
+}</component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.6470031225335027" />
+      <entry key="MS500" value="3.559461814247918" />
+      <entry key="S2" value="4.563739244974032" />
+      <entry key="S5" value="4.950581980111345" />
+      <entry key="S10" value="5.743384853700643" />
+      <entry key="S30" value="8.55368699826803" />
+      <entry key="S60" value="12.50565737638673" />
+      <entry key="M2" value="21.81028866481363" />
+      <entry key="M5" value="42.27587413083938" />
+      <entry key="M10" value="61.32328032614821" />
+      <entry key="M15" value="75.65312055389099" />
+      <entry key="M30" value="106.83788588559615" />
+      <entry key="H1" value="138.51871694519357" />
+      <entry key="H2" value="162.25947139212133" />
+      <entry key="H4" value="176.96091187056462" />
+      <entry key="D1" value="190.98103877213407" />
+      <entry key="W1" value="193.5640958336997" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="9.651354020264996E-204" />
+      <entry key="S10" value="3.1066628430302775E-102" />
+      <entry key="S30" value="1.459143621604526E-34" />
+      <entry key="S60" value="1.2079501734775847E-17" />
+      <entry key="M2" value="3.475557758803008E-9" />
+      <entry key="M5" value="4.1343744120232495E-4" />
+      <entry key="M10" value="0.02033316112173228" />
+      <entry key="M15" value="0.07449662559689273" />
+      <entry key="M30" value="0.2729406997809098" />
+      <entry key="H1" value="0.5224372687518675" />
+      <entry key="H2" value="0.7227982213258864" />
+      <entry key="H4" value="0.8501754062109086" />
+      <entry key="D1" value="0.97331053225943" />
+      <entry key="W1" value="0.9961428724111577" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.5999049801370193" />
+      <entry key="MS500" value="3.5378848562894234" />
+      <entry key="S2" value="4.556786370321975" />
+      <entry key="S5" value="4.94755613505211" />
+      <entry key="S10" value="5.741624934400334" />
+      <entry key="S30" value="8.552813786605215" />
+      <entry key="S60" value="12.504987577658834" />
+      <entry key="M2" value="21.809646492007097" />
+      <entry key="M5" value="42.2757251888506" />
+      <entry key="M10" value="61.34300147798673" />
+      <entry key="M15" value="75.72680609328141" />
+      <entry key="M30" value="107.10973889962109" />
+      <entry key="H1" value="139.04019066481231" />
+      <entry key="H2" value="162.9816201515646" />
+      <entry key="H4" value="177.81070931715155" />
+      <entry key="D1" value="191.95427773963775" />
+      <entry key="W1" value="194.5602282555653" />
+    </decayedShown>
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="3HJXrRINMFRoAeGmXxtc3xzhXK6" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectSessionTemplates">
+    <option name="panelTemplate">
+      <template>
+        <option name="modeId" value="Agent" />
+        <option name="model">
+          <model>
+            <option name="modelType" value="builtin_id" />
+            <option name="modelValue" value="auto" />
+          </model>
+        </option>
+        <option name="targetType" value="BACKGROUND" />
+        <option name="worktreeMode" value="WORKSPACE" />
+      </template>
+    </option>
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "copilot.chat.legacySessionMetadata.migrated": "true",
+    "git-widget-placeholder": "main",
+    "junie.onboarding.icon.badge.shown": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "to.speed.mode.migration.done": "true",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2026.1.2\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-python-sdk-c59985aa861c-c2ffad84badb-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-261.24374.152" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="" />
+      <created>1785587371706</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1785587371706</updated>
+      <workItem from="1785587382892" duration="2443000" />
+      <workItem from="1785593626938" duration="5706000" />
+    </task>
+    <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
+      <option name="closed" value="true" />
+      <created>1785587531403</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1785587531403</updated>
+    </task>
+    <task id="LOCAL-00002" summary="refactor(dataProvider): switch to dynamic API or static snapshot&#10;&#10;Use live API when VITE_API_URL is set, otherwise fall back to &#10;static JSON data. This improves flexibility and allows &#10;for easier development and testing. Reduces need for &#10;manual data updates.">
+      <option name="closed" value="true" />
+      <created>1785588055936</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1785588055936</updated>
+    </task>
+    <task id="LOCAL-00003" summary="feat(data): added data">
+      <option name="closed" value="true" />
+      <created>1785588848316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1785588848316</updated>
+    </task>
+    <task id="LOCAL-00004" summary="chore(package): update dependencies and package info&#10;&#10;Remove unnecessary fields from package.json to &#10;improve project configuration. Add ra-data-simple-rest &#10;dependency to enhance data handling capabilities. &#10;This simplifies the project structure and reduces &#10;dependencies.">
+      <option name="closed" value="true" />
+      <created>1785588864382</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1785588864382</updated>
+    </task>
+    <task id="LOCAL-00005" summary="fix(index.html): update favicon link&#10;&#10;Update favicon to use correct SVG file &#10;to maintain visual consistency. This &#10;improves overall user experience.">
+      <option name="closed" value="true" />
+      <created>1785588875415</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1785588875415</updated>
+    </task>
+    <task id="LOCAL-00006" summary="chore(config): update project metadata&#10;&#10;Remove outdated user ID and add migration status to &#10;improve project configuration consistency. This &#10;reflects recent changes in user identification.">
+      <option name="closed" value="true" />
+      <created>1785595829013</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1785595829013</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat(server): add express server with dotenv and PostgreSQL support&#10;&#10;Introduce an Express-based server with added support for environment variables using dotenv and PostgreSQL database integration. Additionally, include a new `dev:full` script for concurrent server and client development.">
+      <option name="closed" value="true" />
+      <created>1785596184966</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1785596184966</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat(components): add LastUpdated component&#10;&#10;Display last update timestamp to improve user experience and &#10;provide transparency about data freshness. This enhances overall &#10;dashboard usability and trustworthiness.">
+      <option name="closed" value="true" />
+      <created>1785596764222</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1785596764222</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat(dashboard): add last updated component&#10;&#10;Improve dashboard by displaying last &#10;updated information to users. This &#10;enhances transparency and user trust. &#10;The component is added above the &#10;station cards section.">
+      <option name="closed" value="true" />
+      <created>1785598062371</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1785598062371</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat(components): add LastUpdated component&#10;&#10;Display last update timestamp and statistics about records and cities.&#10;Improve user experience by providing real-time data updates. &#10;Enhance dashboard with additional information.">
+      <option name="closed" value="true" />
+      <created>1785598079213</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1785598079213</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove(components/LastUpdated): delete unused component&#10;&#10;Component is no longer used in the application &#10;and its removal simplifies the codebase. This &#10;reduces maintenance overhead and improves &#10;overall quality.">
+      <option name="closed" value="true" />
+      <created>1785598085062</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1785598085062</updated>
+    </task>
+    <task id="LOCAL-00012" summary="chore(deployment): configure Vercel deployment settings&#10;&#10;Add Vercel configuration to enable seamless deployment&#10;of the application. This includes ignoring Vercel&#10;files and setting up build and route configurations. &#10;This improves the overall deployment process.">
+      <option name="closed" value="true" />
+      <created>1785599829566</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1785599829566</updated>
+    </task>
+    <task id="LOCAL-00013" summary="chore(build): update vercel configuration&#10;&#10;Add includeFiles config to vercel node build to &#10;improve build process and reduce errors. This &#10;enhances the overall build reliability and &#10;performance of the application.">
+      <option name="closed" value="true" />
+      <created>1785599944981</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1785599944981</updated>
+    </task>
+    <task id="LOCAL-00014" summary="chore(package.json): add vercel-build script&#10;&#10;Add new script to improve deployment process to Vercel. &#10;This enhances the automated build process for &#10;production environment. Improves overall workflow.">
+      <option name="closed" value="true" />
+      <created>1785600001093</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600001093</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size.">
+      <option name="closed" value="true" />
+      <created>1785600007570</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600007570</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat" />
+    <MESSAGE value="feat(build" />
+    <MESSAGE value="feat(build):" />
+    <MESSAGE value="feat(build): configure" />
+    <MESSAGE value="feat(build): configure proxy" />
+    <MESSAGE value="feat(build): configure proxy and" />
+    <MESSAGE value="feat(build): configure proxy and optimize" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:400" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000." />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Im" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks." />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces" />
+    <MESSAGE value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
+    <option name="LAST_COMMIT_MESSAGE" value="feat(build): configure proxy and optimize build output&#10;&#10;Add proxy to enable API requests to localhost:4000. &#10;Improve build performance by splitting code into chunks. &#10;This enhances development experience and reduces bundle size." />
+  </component>
+</project>
