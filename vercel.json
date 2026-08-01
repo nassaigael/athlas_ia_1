@@ -20,18 +20,6 @@
       "dest": "/dist/assets/$1"
     },
     {
-      "src": "/favicon.svg",
-      "dest": "/dist/favicon.svg"
-    },
-    {
-      "src": "/icons.svg",
-      "dest": "/dist/icons.svg"
-    },
-    {
-      "src": "/logo.png",
-      "dest": "/dist/logo.png"
-    },
-    {
       "src": "/",
       "dest": "/dist/index.html"
     },
