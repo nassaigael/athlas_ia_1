@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
+    <list default="true" id="87318eb6-c4c0-433b-a5b9-037c349ab984" name="Changes" comment="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality.">
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -46,61 +48,61 @@
   </component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="5.204537896470058E-7" />
-      <entry key="MS500" value="0.09673382463776381" />
-      <entry key="S2" value="1.9787208069140503" />
-      <entry key="S5" value="4.93647213408684" />
-      <entry key="S10" value="7.413149111310385" />
-      <entry key="S30" value="10.82456311732382" />
-      <entry key="S60" value="13.079758096077962" />
-      <entry key="M2" value="15.80308141912296" />
-      <entry key="M5" value="27.912235865488913" />
-      <entry key="M10" value="48.95799954210845" />
-      <entry key="M15" value="66.21638109221827" />
-      <entry key="M30" value="103.47314391844304" />
-      <entry key="H1" value="141.95103283995584" />
-      <entry key="H2" value="171.50476132204736" />
-      <entry key="H4" value="190.12445509699702" />
-      <entry key="D1" value="208.1015563933502" />
-      <entry key="W1" value="211.4365169385599" />
+      <entry key="MS100" value="1.8929049783089267" />
+      <entry key="MS500" value="3.7909087204608265" />
+      <entry key="S2" value="4.645433813388939" />
+      <entry key="S5" value="4.853351526381223" />
+      <entry key="S10" value="4.925845769411193" />
+      <entry key="S30" value="5.011508781400896" />
+      <entry key="S60" value="5.74615155082766" />
+      <entry key="M2" value="8.799646358235105" />
+      <entry key="M5" value="20.791075121882738" />
+      <entry key="M10" value="41.82576895834946" />
+      <entry key="M15" value="59.76722885018514" />
+      <entry key="M30" value="99.10369755219" />
+      <entry key="H1" value="140.37185233656308" />
+      <entry key="H2" value="172.48316250675467" />
+      <entry key="H4" value="192.88213330843953" />
+      <entry key="D1" value="212.6904753365893" />
+      <entry key="W1" value="216.37679940017554" />
     </decayedCancelled>
     <decayedSelected>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0" />
-      <entry key="S10" value="1.0" />
-      <entry key="S30" value="1.0" />
-      <entry key="S60" value="1.0" />
-      <entry key="M2" value="1.0000000001277218" />
-      <entry key="M5" value="1.0001102823855041" />
-      <entry key="M10" value="1.010501542053628" />
-      <entry key="M15" value="1.047955164369298" />
-      <entry key="M30" value="1.21898667623693" />
-      <entry key="H1" value="1.4679601224858063" />
-      <entry key="H2" value="1.6840761086939116" />
-      <entry key="H4" value="1.827088936387078" />
-      <entry key="D1" value="1.9688548149136604" />
-      <entry key="W1" value="1.9954901275642125" />
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="4.0876909863273944E-149" />
+      <entry key="S2" value="7.995939774444975E-38" />
+      <entry key="S5" value="1.4492650056458967E-15" />
+      <entry key="S10" value="3.806921335732979E-8" />
+      <entry key="S30" value="0.0033640153407602123" />
+      <entry key="S60" value="0.05800013224778208" />
+      <entry key="M2" value="0.24083216617096204" />
+      <entry key="M5" value="0.5658921756251106" />
+      <entry key="M10" value="0.7601160082321301" />
+      <entry key="M15" value="0.866771522903425" />
+      <entry key="M30" value="1.1086128924455572" />
+      <entry key="H1" value="1.3999249091095631" />
+      <entry key="H2" value="1.6445873912204136" />
+      <entry key="H4" value="1.8055408079711817" />
+      <entry key="D1" value="1.9649656473285861" />
+      <entry key="W1" value="1.994926538618004" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.6409433877717745E-5" />
-      <entry key="MS500" value="0.2056353779678795" />
-      <entry key="S2" value="2.5499423637003167" />
-      <entry key="S5" value="5.733973937677262" />
-      <entry key="S10" value="8.30536827996761" />
-      <entry key="S30" value="11.786629768539147" />
-      <entry key="S60" value="14.06024288342617" />
-      <entry key="M2" value="16.793070494829177" />
-      <entry key="M5" value="28.90812432567041" />
-      <entry key="M10" value="49.966133829028045" />
-      <entry key="M15" value="67.26244309378168" />
-      <entry key="M30" value="104.69057053777834" />
-      <entry key="H1" value="143.4177857216599" />
-      <entry key="H2" value="173.18805055914504" />
-      <entry key="H4" value="191.95109020551644" />
-      <entry key="D1" value="210.0703256116273" />
-      <entry key="W1" value="213.43199457096654" />
+      <entry key="MS100" value="1.8186799356034387" />
+      <entry key="MS500" value="3.7605706952668516" />
+      <entry key="S2" value="4.6361062606700045" />
+      <entry key="S5" value="4.849450895736254" />
+      <entry key="S10" value="4.923865920649502" />
+      <entry key="S30" value="5.014078531962521" />
+      <entry key="S60" value="5.802685625088064" />
+      <entry key="M2" value="9.03790027344034" />
+      <entry key="M5" value="21.3545114945483" />
+      <entry key="M10" value="42.58407078441564" />
+      <entry key="M15" value="60.63241219306255" />
+      <entry key="M30" value="100.21088047747178" />
+      <entry key="H1" value="141.7706203731548" />
+      <entry key="H2" value="174.12697868539433" />
+      <entry key="H4" value="194.68722424494345" />
+      <entry key="D1" value="214.65535532371103" />
+      <entry key="W1" value="218.37171341392877" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -169,7 +171,7 @@
       <option name="presentableId" value="Default" />
       <updated>1785587371706</updated>
       <workItem from="1785587382892" duration="2443000" />
-      <workItem from="1785593626938" duration="6027000" />
+      <workItem from="1785593626938" duration="6357000" />
     </task>
     <task id="LOCAL-00001" summary="chore(ide): remove unused ide settings&#10;&#10;Remove unnecessary IntelliJ IDEA settings &#10;to reduce project clutter and improve &#10;collaboration. This change helps keep the &#10;project repository clean.">
       <option name="closed" value="true" />
@@ -347,38 +349,54 @@
       <option name="project" value="LOCAL" />
       <updated>1785600273770</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="chore(config): remove vercel configuration&#10;&#10;Remove Vercel configuration file to disable automatic &#10;builds and deployments. This change helps to prevent &#10;unwanted deployments and reduces potential security &#10;risks. The project will now require manual deployment.">
+      <option name="closed" value="true" />
+      <created>1785600410544</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600410544</updated>
+    </task>
+    <task id="LOCAL-00024" summary="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality.">
+      <option name="closed" value="true" />
+      <created>1785600469907</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1785600469907</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting," />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities." />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;re" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrie" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling" />
-    <MESSAGE value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
-    <option name="LAST_COMMIT_MESSAGE" value="feat(api): add API endpoints for air quality data&#10;&#10;Create API endpoints to retrieve and manage air quality data, &#10;including measures and cities. Implement pagination, sorting, &#10;and filtering for measures and cities. Add endpoint to &#10;retrieve latest timestamp and health check. Improve data &#10;retrieval and error handling." />
+    <MESSAGE value="ref" />
+    <MESSAGE value="refactor(api" />
+    <MESSAGE value="refactor(api):" />
+    <MESSAGE value="refactor(api): simplify" />
+    <MESSAGE value="refactor(api): simplify CORS" />
+    <MESSAGE value="refactor(api): simplify CORS configuration" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintain" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability." />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality" />
+    <MESSAGE value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor(api): simplify CORS configuration and routes&#10;&#10;Remove redundant CORS configuration and simplify &#10;routes for better readability and maintainability. &#10;This reduces complexity and improves code quality." />
   </component>
 </project>
