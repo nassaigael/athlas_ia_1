@@ -48,17 +48,6 @@ export default function Dashboard() {
             <Title title="Tableau de bord" />
 
             <Box sx={{ mb: 3 }}>
-                <Typography sx={{
-                    fontSize: '0.65rem',
-                    letterSpacing: '0.12em',
-                    color: tokens.textLo,
-                    fontFamily: 'IBM Plex Mono',
-                    textTransform: 'uppercase',
-                    mb: 0.5
-                }}>
-                    {totalMesures.toLocaleString('fr-FR')} relevés horaires
-                    · {new Date(dateMin).toLocaleDateString('fr-FR')} → {new Date(dateMax).toLocaleDateString('fr-FR')}
-                </Typography>
                 <Typography variant="h4" sx={{ mb: 2 }}>Stations de mesure — qualité de l'air</Typography>
                 <Box sx={{ mb: 2 }}>
                     <LastUpdated />
