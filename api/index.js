@@ -127,12 +127,18 @@ app.get('/api/cities', async (req, res) => {
 
         let query = `
             SELECT 
-                city_id AS id,
-                city_name AS ville,
-                country AS pays,
-                latitude,
-                longitude
-            FROM dim_city
+                c.city_id AS id,
+                c.city_name AS ville,
+                c.country AS pays,
+                c.latitude,
+                c.longitude,
+                COALESCE(ROUND(AVG(f.aqi)::numeric, 2), 0) AS aqi_moyen,
+                COUNT(f.fact_id) AS nb_mesures,
+                MAX(dt.timestamp_hour) AS derniere_mesure
+            FROM dim_city c
+            LEFT JOIN fact_air_quality f ON c.city_id = f.city_id
+            LEFT JOIN dim_time dt ON f.time_id = dt.time_id
+            GROUP BY c.city_id, c.city_name, c.country, c.latitude, c.longitude
         `;
         const params = [];
         let paramIndex = 1;
@@ -140,25 +146,27 @@ app.get('/api/cities', async (req, res) => {
         const whereClauses = [];
         for (const [key, value] of Object.entries(filter)) {
             if (key === 'ville' || key === 'city_name') {
-                whereClauses.push(`city_name ILIKE $${paramIndex}`);
+                whereClauses.push(`c.city_name ILIKE $${paramIndex}`);
                 params.push(`%${value}%`);
                 paramIndex++;
             }
         }
         if (whereClauses.length) {
-            query += ` WHERE ${whereClauses.join(' AND ')}`;
+            const whereStr = `WHERE ${whereClauses.join(' AND ')}`;
+            query = query.replace('GROUP BY', `${whereStr} GROUP BY`);
         }
 
-        let countQuery = `SELECT COUNT(*) FROM dim_city`;
-        if (whereClauses.length) {
-            countQuery += ` WHERE ${whereClauses.join(' AND ')}`;
-        }
-        const countResult = await pool.query(countQuery, params);
-        const total = parseInt(countResult.rows[0].count);
-
-        const orderColumn = cityOrderMap[sortField] || 'city_id';
+        const orderColumn = cityOrderMap[sortField] || 'c.city_id';
         const orderDir = sortOrder === 'DESC' ? 'DESC' : 'ASC';
         query += ` ORDER BY ${orderColumn} ${orderDir}`;
+
+        const countQuery = `
+            SELECT COUNT(DISTINCT c.city_id) AS total 
+            FROM dim_city c
+            ${whereClauses.length ? `WHERE ${whereClauses.join(' AND ')}` : ''}
+        `;
+        const countResult = await pool.query(countQuery, params);
+        const total = parseInt(countResult.rows[0].total);
 
         const paginatedParams = [...params, limit, start];
         const paginatedQuery = query + ` LIMIT $${paramIndex} OFFSET $${paramIndex + 1}`;
@@ -178,13 +186,19 @@ app.get('/api/cities/:id', async (req, res) => {
     try {
         const result = await pool.query(`
             SELECT 
-                city_id AS id,
-                city_name AS ville,
-                country AS pays,
-                latitude,
-                longitude
-            FROM dim_city 
-            WHERE city_id = $1
+                c.city_id AS id,
+                c.city_name AS ville,
+                c.country AS pays,
+                c.latitude,
+                c.longitude,
+                COALESCE(ROUND(AVG(f.aqi)::numeric, 2), 0) AS aqi_moyen,
+                COUNT(f.fact_id) AS nb_mesures,
+                MAX(dt.timestamp_hour) AS derniere_mesure
+            FROM dim_city c
+            LEFT JOIN fact_air_quality f ON c.city_id = f.city_id
+            LEFT JOIN dim_time dt ON f.time_id = dt.time_id
+            WHERE c.city_id = $1
+            GROUP BY c.city_id, c.city_name, c.country, c.latitude, c.longitude
         `, [req.params.id]);
         if (!result.rows.length) {
             return res.status(404).json({ error: 'Not found' });
