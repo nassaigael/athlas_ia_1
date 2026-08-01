@@ -53,11 +53,14 @@ function parseListParams(req) {
 }
 
 const cityOrderMap = {
-    'id': 'city_id',
-    'ville': 'city_name',
-    'pays': 'country',
-    'latitude': 'latitude',
-    'longitude': 'longitude'
+    'id': 'c.city_id',
+    'ville': 'c.city_name',
+    'pays': 'c.country',
+    'latitude': 'c.latitude',
+    'longitude': 'c.longitude',
+    'aqi_moyen': 'aqi_moyen',
+    'nb_mesures': 'nb_mesures',
+    'derniere_mesure': 'derniere_mesure'
 };
 
 const measureOrderMap = {
